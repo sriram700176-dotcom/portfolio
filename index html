@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sriram K S — Portfolio | Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        ink: '#0f172a',
+                    },
+                    maxWidth: {
+                        'content': '860px',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 4px; }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in { animation: fadeIn 0.7s ease-out forwards; }
+        .section-index {
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased selection:bg-ink selection:text-white">
+ 
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-content mx-auto px-6 sm:px-8 h-20 flex items-center justify-between">
+            <a href="#hero" class="text-base text-ink tracking-tight flex items-center gap-2">
+                <span class="section-index text-xs text-slate-400">01</span> <span class="font-display font-bold">Sriram K S</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-10 text-sm text-slate-500">
+                <a href="#about" class="hover:text-ink transition-colors">About</a>
+                <a href="#skills" class="hover:text-ink transition-colors">Skills</a>
+                <a href="#experience" class="hover:text-ink transition-colors">Education</a>
+                <a href="#projects" class="hover:text-ink transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-ink transition-colors">Contact</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="hidden sm:inline-flex items-center gap-2 border border-ink text-ink text-sm font-medium px-4 py-2 rounded-full hover:bg-ink hover:text-white transition-colors">
+                    Get in touch
+                </a>
+                <button id="mobile-menu-btn" class="md:hidden text-slate-700 focus:outline-none p-2 text-lg">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-600 hover:text-ink font-medium">About</a>
+            <a href="#skills" class="block text-slate-600 hover:text-ink font-medium">Skills</a>
+            <a href="#experience" class="block text-slate-600 hover:text-ink font-medium">Education</a>
+            <a href="#projects" class="block text-slate-600 hover:text-ink font-medium">Projects</a>
+            <a href="#contact" class="block text-ink font-semibold pt-2 border-t border-slate-100">Contact</a>
+        </div>
+    </header>
+ 
+    <main class="pt-20">
+ 
+        <!-- HERO -->
+        <section id="hero" class="max-w-content mx-auto px-6 sm:px-8 pt-24 pb-28 animate-fade-in">
+            <div class="flex flex-wrap items-center gap-3 mb-8">
+                <span class="text-xs font-semibold tracking-[0.2em] uppercase text-slate-400">Portfolio</span>
+                <span class="inline-flex items-center gap-2 text-xs font-medium text-slate-500 border border-slate-200 rounded-full px-3 py-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                    Open for software engineering internships
+                </span>
+            </div>
+            <h1 class="text-5xl sm:text-7xl font-display font-bold text-ink tracking-tight leading-[1.05] mb-4">
+                Sriram K S
+            </h1>
+            <h2 class="text-xl sm:text-2xl font-semibold text-slate-600 tracking-tight leading-snug mb-6">
+                Software developer building<br class="hidden sm:block"> clean, practical solutions.
+            </h2>
+            <p class="text-lg text-slate-500 leading-relaxed max-w-xl mb-10">
+                Computer Science & Engineering undergraduate focused on Python, applied machine learning, and web development.
+            </p>
+            <div class="flex flex-wrap items-center gap-3 mb-14">
+                <a href="#projects" class="inline-flex items-center gap-2 bg-ink text-white text-sm font-medium px-5 py-3 rounded-full hover:bg-slate-700 transition-colors">
+                    View projects <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+                <a href="https://linkedin.com/in/sri-ram-21853b427" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 border border-slate-200 text-slate-700 text-sm font-medium px-5 py-3 rounded-full hover:border-slate-400 transition-colors">
+                    <i class="fa-brands fa-linkedin text-blue-600"></i> LinkedIn
+                </a>
+            </div>
+            <div class="flex flex-wrap gap-x-8 gap-y-3 text-sm text-slate-500 pt-8 border-t border-slate-100">
+                <span class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-slate-400"></i> Madurai, Tamil Nadu, India</span>
+                <a href="mailto:sriram700176@gmail.com" class="flex items-center gap-2 hover:text-ink transition-colors"><i class="fa-regular fa-envelope text-slate-400"></i> sriram700176@gmail.com</a>
+                <a href="tel:+917001781049" class="flex items-center gap-2 hover:text-ink transition-colors"><i class="fa-solid fa-phone text-slate-400"></i> +91 7001781049</a>
+            </div>
+        </section>
+ 
+        <!-- ABOUT -->
+        <section id="about" class="max-w-content mx-auto px-6 sm:px-8 py-20 border-t border-slate-100">
+            <div class="grid grid-cols-1 md:grid-cols-[140px_1fr] gap-8">
+                <div class="section-index text-xs text-slate-400 pt-1">02 / About</div>
+                <div>
+                    <h2 class="text-2xl font-semibold text-ink mb-6">Professional Summary</h2>
+                    <p class="text-slate-600 leading-relaxed mb-8">
+                        Motivated Computer Science & Engineering undergraduate with strong foundational skills in Python, C, SQL, and web development (HTML/CSS). Passionate about software engineering, data analytics, and machine learning. Hands-on experience building ML models for natural language processing and responsive web applications, with a proven ability to solve problems using version control (GitHub) and standard developer tooling.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <span class="text-xs uppercase tracking-wider text-slate-400 font-medium block mb-1">Languages</span>
+                            <span class="text-sm text-slate-700">English (Full Professional), Tamil (Native)</span>
+                        </div>
+                        <div>
+                            <span class="text-xs uppercase tracking-wider text-slate-400 font-medium block mb-1">Current Focus</span>
+                            <span class="text-sm text-slate-700">B.E. Computer Science & Engineering</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <!-- SKILLS -->
+        <section id="skills" class="max-w-content mx-auto px-6 sm:px-8 py-20 border-t border-slate-100">
+            <div class="grid grid-cols-1 md:grid-cols-[140px_1fr] gap-8">
+                <div class="section-index text-xs text-slate-400 pt-1">03 / Skills</div>
+                <div>
+                    <h2 class="text-2xl font-semibold text-ink mb-10">Technical Expertise</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-ink mb-3 flex items-center gap-2"><i class="fa-solid fa-code text-slate-400 text-xs"></i> Programming</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1.5 border border-slate-200 text-slate-600 rounded-md text-xs font-medium">Python</span>
+                                <span class="px-3 py-1.5 border border-slate-200 text-slate-600 rounded-md text-xs font-medium">C</span>
+                                <span class="px-3 py-1.5 border border-slate-200 text-slate-600 rounded-md text-xs font-medium">SQL</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-sm font-semibold text-ink mb-3 flex items-center gap-2"><i class="fa-solid fa-globe text-slate-400 text-xs"></i> Web Technologies</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1.5 border border-slate-200 text-slate-600 rounded-md text-xs font-medium">HTML5</span>
+                                <span class="px-3 py-1.5 border border-slate-200 text-slate-600 rounded-md text-xs font-medium">CSS3</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-sm font-semibold text-ink mb-3 flex items-center gap-2"><i class="fa-solid fa-toolbox text-slate-400 text-xs"></i> Developer Tools</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1.5 border border-slate-200 text-slate-600 rounded-md text-xs font-medium">VS Code</span>
+                                <span class="px-3 py-1.5 border border-slate-200 text-slate-600 rounded-md text-xs font-medium">Git</span>
+                                <span class="px-3 py-1.5 border border-slate-200 text-slate-600 rounded-md text-xs font-medium">GitHub</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-sm font-semibold text-ink mb-3 flex items-center gap-2"><i class="fa-solid fa-chart-pie text-slate-400 text-xs"></i> Productivity Tools</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1.5 border border-slate-200 text-slate-600 rounded-md text-xs font-medium">MS Excel</span>
+                                <span class="px-3 py-1.5 border border-slate-200 text-slate-600 rounded-md text-xs font-medium">MS Word</span>
+                                <span class="px-3 py-1.5 border border-slate-200 text-slate-600 rounded-md text-xs font-medium">MS PowerPoint</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <!-- EDUCATION -->
+        <section id="experience" class="max-w-content mx-auto px-6 sm:px-8 py-20 border-t border-slate-100">
+            <div class="grid grid-cols-1 md:grid-cols-[140px_1fr] gap-8">
+                <div class="section-index text-xs text-slate-400 pt-1">04 / Education</div>
+                <div>
+                    <h2 class="text-2xl font-semibold text-ink mb-10">Academic Background</h2>
+                    <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-4 mb-8 pb-8 border-b border-slate-100">
+                        <div>
+                            <span class="text-xs font-mono text-slate-400">2025 – 2029 (Expected)</span>
+                            <h3 class="text-lg font-semibold text-ink mt-1">Bachelor of Engineering — Computer Science and Engineering</h3>
+                            <p class="text-slate-500 text-sm mt-1">Anna University Affiliated College · Madurai, Tamil Nadu</p>
+                        </div>
+                    </div>
+                    <h4 class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-4">Relevant Coursework</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div class="flex items-center gap-3 text-sm text-slate-600">
+                            <i class="fa-solid fa-database text-slate-400 text-xs"></i> Data Structures & Algorithms
+                        </div>
+                        <div class="flex items-center gap-3 text-sm text-slate-600">
+                            <i class="fa-solid fa-cubes text-slate-400 text-xs"></i> Object-Oriented Programming (Python/C)
+                        </div>
+                        <div class="flex items-center gap-3 text-sm text-slate-600">
+                            <i class="fa-solid fa-server text-slate-400 text-xs"></i> Database Management Systems (SQL)
+                        </div>
+                        <div class="flex items-center gap-3 text-sm text-slate-600">
+                            <i class="fa-solid fa-paint-brush text-slate-400 text-xs"></i> Web Design Fundamentals
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <!-- PROJECTS -->
+        <section id="projects" class="max-w-content mx-auto px-6 sm:px-8 py-20 border-t border-slate-100">
+            <div class="grid grid-cols-1 md:grid-cols-[140px_1fr] gap-8">
+                <div class="section-index text-xs text-slate-400 pt-1">05 / Projects</div>
+                <div class="space-y-6">
+                    <h2 class="text-2xl font-semibold text-ink mb-4">Featured Projects</h2>
+ 
+                    <div class="border border-slate-200 rounded-xl p-7 hover:border-slate-300 transition-colors">
+                        <div class="flex items-start justify-between gap-4 mb-3">
+                            <h3 class="text-base font-semibold text-ink">Spam Classification System</h3>
+                            <i class="fa-solid fa-shield-halved text-slate-300"></i>
+                        </div>
+                        <ul class="space-y-1.5 text-sm text-slate-600 mb-4">
+                            <li>Engineered a machine learning classifier in Python to distinguish spam from legitimate text messages and emails.</li>
+                            <li>Applied NLP techniques including tokenization, stop-word removal, and TF-IDF feature extraction.</li>
+                            <li>Evaluated and optimized model performance using precision, recall, and F1-score.</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs font-medium rounded">Python</span>
+                            <span class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs font-medium rounded">Scikit-Learn</span>
+                            <span class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs font-medium rounded">NLP</span>
+                        </div>
+                    </div>
+ 
+                    <div class="border border-slate-200 rounded-xl p-7 hover:border-slate-300 transition-colors">
+                        <div class="flex items-start justify-between gap-4 mb-3">
+                            <h3 class="text-base font-semibold text-ink">Responsive Web Development Projects</h3>
+                            <i class="fa-solid fa-window-maximize text-slate-300"></i>
+                        </div>
+                        <ul class="space-y-1.5 text-sm text-slate-600 mb-4">
+                            <li>Designed and deployed responsive web layouts using modern HTML5 semantic elements and CSS flexbox/grid.</li>
+                            <li>Ensured cross-browser compatibility and optimized loading speed across mobile and desktop devices.</li>
+                            <li>Used GitHub for version control, managing repositories and maintaining clean commit history.</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs font-medium rounded">HTML5</span>
+                            <span class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs font-medium rounded">CSS3</span>
+                            <span class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs font-medium rounded">GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <!-- COMPETENCIES -->
+        <section id="competencies" class="max-w-content mx-auto px-6 sm:px-8 py-20 border-t border-slate-100">
+            <div class="grid grid-cols-1 md:grid-cols-[140px_1fr] gap-8">
+                <div class="section-index text-xs text-slate-400 pt-1">06 / Strengths</div>
+                <div>
+                    <h2 class="text-2xl font-semibold text-ink mb-10">Core Competencies</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+                        <div>
+                            <i class="fa-solid fa-laptop-code text-slate-400 mb-3 text-lg"></i>
+                            <h3 class="text-sm font-semibold text-ink mb-1.5">Software Development</h3>
+                            <p class="text-slate-500 text-sm leading-relaxed">Logic building, structured debugging, and data processing with SQL queries.</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-code-branch text-slate-400 mb-3 text-lg"></i>
+                            <h3 class="text-sm font-semibold text-ink mb-1.5">Version Control</h3>
+                            <p class="text-slate-500 text-sm leading-relaxed">Source code management using Git and GitHub workflows.</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-chart-line text-slate-400 mb-3 text-lg"></i>
+                            <h3 class="text-sm font-semibold text-ink mb-1.5">Data & Documentation</h3>
+                            <p class="text-slate-500 text-sm leading-relaxed">Advanced documentation, data formatting, and presentation using MS Office.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <!-- CONTACT -->
+        <section id="contact" class="max-w-content mx-auto px-6 sm:px-8 py-28 border-t border-slate-100">
+            <div class="grid grid-cols-1 md:grid-cols-[140px_1fr] gap-8">
+                <div class="section-index text-xs text-slate-400 pt-1">07 / Contact</div>
+                <div>
+                    <h2 class="text-2xl sm:text-3xl font-semibold text-ink mb-4">Let's connect.</h2>
+                    <p class="text-slate-500 leading-relaxed max-w-md mb-10">
+                        I'm actively looking for internship and career opportunities in software development, data analysis, and machine learning.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-3">
+                        <a href="mailto:sriram700176@gmail.com" class="inline-flex items-center gap-2 bg-ink text-white text-sm font-medium px-5 py-3 rounded-full hover:bg-slate-700 transition-colors">
+                            <i class="fa-solid fa-envelope"></i> sriram700176@gmail.com
+                        </a>
+                        <a href="tel:+917001781049" class="inline-flex items-center gap-2 border border-slate-200 text-slate-700 text-sm font-medium px-5 py-3 rounded-full hover:border-slate-400 transition-colors">
+                            <i class="fa-solid fa-phone"></i> +91 7001781049
+                        </a>
+                        <a href="https://linkedin.com/in/sri-ram-21853b427" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 border border-slate-200 text-slate-700 text-sm font-medium px-5 py-3 rounded-full hover:border-slate-400 transition-colors">
+                            <i class="fa-brands fa-linkedin text-blue-600"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <footer class="max-w-content mx-auto px-6 sm:px-8 py-8 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-400">
+            <p class="font-display font-medium">© 2026 Sriram K S</p>
+            <p>Madurai, Tamil Nadu, India</p>
+        </footer>
+    </main>
+ 
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+    </script>
+</body>
+</html>
